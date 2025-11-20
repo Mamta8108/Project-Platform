@@ -1,0 +1,39 @@
+body {
+  font-family: Arial;
+  margin: 20px;
+}
+
+header {
+  background: #4e6cf3;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+}
+
+#ideaForm, #loginSection {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.idea-card {
+  border: 1px solid #444;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+button {
+  padding: 8px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  background: #4e6cf3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+.hidden {
+  display: none;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrestHub - Campus Collaboration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>CrestHub</h1>
+    <p>Your Campus Project Collaboration Platform</p>
+  </header>
+
+  <!-- LOGIN -->
+  <section id="loginSection">
+    <h2>Login</h2>
+    <input id="usernameInput" placeholder="Enter your name"/>
+    <button onclick="login()">Login</button>
+  </section>
+
+  <!-- MAIN APP -->
+  <section id="mainApp" style="display:none;">
+    <button id="addIdeaBtn" onclick="toggleForm()">+ Post New Idea</button>
+
+    <!-- IDEA FORM -->
+    <div id="ideaForm" class="hidden">
+      <h3>Create New Project Idea</h3>
+      <input id="title" placeholder="Project Title" />
+      <textarea id="desc" placeholder="Project Description"></textarea>
+      <input id="skills" placeholder="Skills Needed (comma-separated)" />
+      <select id="status">
+        <option value="Idea">Idea</option>
+        <option value="Ongoing">Ongoing</option>
+      </select>
+      <button onclick="addIdea()">Submit</button>
+    </div>
+
+    <h2>All Ideas</h2>
+    <div id="ideasContainer"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
